@@ -69,19 +69,19 @@ done using any words.
 ## Screenshots
 
 #### Editor
-![Editor][docs/images/editor.png]
+![Editor](docs/images/editor.png)
 
 #### Post view
-![Post view][docs/images/post_view.png]
+![Post view](docs/images/post_view.png)
 
 #### Searching
-![Searching][docs/images/search_results.png]
+![Searching](docs/images/search_results.png)
 
 #### Settings
-![Settings][docs/images/settings.png]
+![Settings](docs/images/settings.png)
 
 #### Insert new post
-![New post][docs/images/insert_new.png]
+![New post](docs/images/insert_new.png)
 
 ## Contributing
 
