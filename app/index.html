@@ -1,0 +1,60 @@
+<html ng-app="myapp">
+<head>
+    <title>myNotebook</title>
+    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/flatly.bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/font-awesome.min.css">
+    <link rel="stylesheet" href="public/css/style.css">
+    <script>window.$ = window.jQuery = require('./public/js/jquery-1.11.3.min.js');</script>
+    <script src="public/js/markdown-it.min.js"></script>
+    <script src="public/js/bootstrap.min.js"></script>
+    <script src="public/js/moment.js"></script>
+    <script src="public/js/angular.min.js"></script>
+    <script src="public/js/angular-route.min.js"></script>
+    <script src="public/js/paste.js"></script>
+    <script src="public/js/appMain.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row header">
+            <div class="nav-head col-sm-3 col-md-3 col-lg-3">
+                <p class="branding"><a class="go_home" href="#"><img class="img-responsive" src="logo.png"></a></p>
+            </div>
+            <div class="nav-head col-sm-9 col-md-9 col-lg-9">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#new"><i class="fa fa-plus"></i> New post</a></li>
+                    <li><a class="go_home" href="#"><i class="fa fa-home"></i> Home</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="sidebar_wrapper col-sm-3 col-md-3 col-lg-3">
+                <div class="input-group input-group-sm">
+                    <input type="text" class="form-control" id="SearchTerm" placeholder="Search posts...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" onclick="post_search()" type="button">Go!</button>
+                    </span>
+                </div><br/>
+                <ul class="list-group list-group-sm sidebar"></ul>
+                <div class="settings-menu">
+                    <div class="dropup">
+                        <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="settingsMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Settings
+                            <span>&nbsp;<i class="fa fa-cog"></i></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="settingsMenu">
+                            <li><a href="#" onclick="cleanImages()">Cleanup images</a></li>
+                            <li><a href="#" onclick="backupData()">Backup data</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- MAIN CONTENT AND INJECTED VIEWS -->
+            <div class="col-sm-9 col-md-9 col-lg-9" id="main">
+                <div ng-view></div>
+            </div>
+        </div>
+    </div>
+    <div id="notify_message"></div>
+</body>
+</html>

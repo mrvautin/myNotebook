@@ -1,0 +1,130 @@
+.nav-head{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.no-posts{
+    padding-bottom: 25px;
+}
+
+.go_new:link{
+    color: white;
+}
+
+.go_new:hover{
+    color: white;
+}
+
+.branding{
+    font-size: 30px;
+}
+
+a{
+   color: #e74c3c;
+}
+
+a:hover{
+   color: #e74c3c;
+}
+
+a:active{
+   color: #e74c3c;
+}
+
+a:visited {
+    color: #e74c3c;
+}
+
+a:link {
+    color: #e74c3c;
+}
+
+.branding a:hover{
+    text-decoration: none;
+}
+
+.icon_pad{
+    padding-left: 10px;
+}
+
+.settings-menu {
+    position: fixed;
+    bottom: 13px;
+    left: 13px;
+    width: 100%;
+}
+
+.post_footer_row{
+    background-color: #ecf0f1;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.list-group-item{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.no_pad_right{
+    padding-right: 0px;
+}
+
+.no_pad_left{
+    padding-left: 0px;
+}
+
+#editor, #preview {
+    height: calc(100vh - 185px);
+    overflow: auto;
+}
+
+.mainBody{
+    height: calc(100vh - 100px);
+    overflow-y: auto;
+}
+
+.header{
+    padding-right: 0px;
+}
+
+.editorMenu{
+    margin-top: 15px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+#preview{
+    color: #2c3e50;
+    background-color: #ffffff;
+    background-image: none;
+    border: 2px solid #dce4ec;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+#notify_message{
+    position: fixed;
+    display: none;
+    z-index: 9999;
+    padding-top: 10px;
+    height: 50px;
+    bottom: 0px; 
+    width: 100%; 
+    text-align: center;
+    font-size: 22px;
+    color: white;
+}
+
+.notify_message-success{
+    background-color: #18bc9c;
+}
+
+.notify_message-danger{
+    background-color: #e74c3c;
+}

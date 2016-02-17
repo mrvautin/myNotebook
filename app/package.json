@@ -1,0 +1,35 @@
+{
+  "name": "myNotebook",
+  "version": "1.0.0",
+  "description": "A cross platform notebook app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atom/electron-quick-start.git"
+  },
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial"
+  ],
+  "author": "mrvautin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/atom/electron-quick-start/issues"
+  },
+  "homepage": "https://github.com/atom/electron-quick-start#readme",
+  "devDependencies": {
+    "electron-prebuilt": "^0.36.7"
+  },
+  "dependencies": {
+    "async": "^1.5.2",
+    "easy-zip": "0.0.4",
+    "lunr": "^0.6.0",
+    "nedb": "^1.7.3",
+    "walk": "^2.3.9"
+  }
+}

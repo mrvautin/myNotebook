@@ -1,30 +1,103 @@
-# electron-quick-start
+# myNotebook
 
-**Clone and run for a quick way to see an Electron in action.**
+A cross-platform (Electron) application which can be used to take notes, edit Markdown, create blog posts, keep screenshots and be used as a general diary. `myNotebook` is built using Github's 
+[Electron](http://electron.atom.io/) framework that be can be run on Windows/Mac (OSX) and Linux. 
 
-This is a minimal Electron application based on the [Quick Start Guide](http://electron.atom.io/docs/latest/tutorial/quick-start) within the Electron documentation.
+## Installation
 
-A basic Electron application needs just these files:
+Running the application can be done by following the below process:
 
-- `index.html` - A web page to render.
-- `main.js` - Starts the app and creates a browser window to render HTML.
-- `package.json` - Points to the app's main file and lists its details and dependencies.
+1. Clone Repository: `git clone https://github.com/mrvautin/myNotebook.git && cd myNotebook/app`
+2. Install dependencies: `npm install`
+3. Start the application: `npm start`
 
-You can learn more about each of these components within the [Quick Start Guide](http://electron.atom.io/docs/latest/tutorial/quick-start).
+## Packaging
 
-## To Use
+You can package the app with [electron-packager](https://github.com/maxogden/electron-packager) so it can be run directly from the `dmg`, `exe` 
+etc rather than from `npm start` in the command line. This can be done using the following commands from the 
+root of the download:
 
-To clone and run this repository you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+#### Ensure all is installed
 
-```bash
-# Clone this repository
-git clone https://github.com/atom/electron-quick-start
-# Go into the repository
-cd electron-quick-start
-# Install dependencies and run the app
-npm install && npm start
-```
+Run `npm install` from the root of the repo.
 
-Learn more about Electron and its API in the [documentation](http://electron.atom.io/docs/latest).
+#### Windows
 
-#### License [CC0 (Public Domain)](LICENSE.md)
+`npm run pack:win`
+
+#### Mac (OSX)
+
+`npm run pack:osx`
+
+#### All
+
+`npm run pack`
+
+## Building installer
+
+Installers can be built (not thoroughly tested) using the [electron-builder](https://github.com/loopline-systems/electron-builder)
+package. Scripts have been included in the `package.json` in the root of the repository.
+
+After packaging as per above you can build using:
+
+#### Windows
+
+`npm run build:win`
+
+#### Mac (OSX)
+
+`npm run build:osx`
+
+#### All
+
+`npm run build`
+
+## Using
+
+Usage is pretty easy. Links to add new posts is in the top right corner, recent posts are listed on the left.
+Editing a post is done by clicking the pencil icon to the right of the published date. From there the post can be updated, deleted etc.
+Images can be added directly from the clipboard. Once in the editor/new screen the `Paste image` button can be clicked to 
+import the image and insert a link.
+
+Dead images can be cleaned through the `Settings` menu.
+
+## Searching posts
+
+The search functionality is built using the very powerful [Lunr](https://github.com/olivernn/lunr.js) search. All posts are indexed and full text searching can be
+done using any words. 
+
+## Screenshots
+
+#### Editor
+![Editor][docs/images/editor.png]
+
+#### Post view
+![Post view][docs/images/post_view.png]
+
+#### Searching
+![Searching][docs/images/search_results.png]
+
+#### Settings
+![Settings][docs/images/settings.png]
+
+#### Insert new post
+![New post][docs/images/insert_new.png]
+
+## Contributing
+
+1. Fork it!
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a pull request :D
+
+## License
+
+The MIT License (MIT)
+Copyright (c) 2016 Mark Moffat
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
