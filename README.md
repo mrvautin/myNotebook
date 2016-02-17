@@ -1,7 +1,10 @@
 # myNotebook
 
-A cross-platform (Electron) application which can be used to take notes, edit Markdown, create blog posts, keep screenshots and be used as a general diary. `myNotebook` is built using Github's 
+A cross-platform (Electron) SPA application which can be used to take notes, edit Markdown, create blog posts, keep screenshots and be used as a general diary. `myNotebook` is built using Github's 
 [Electron](http://electron.atom.io/) framework that be can be run on Windows/Mac (OSX) and Linux. 
+
+`myNotebook` can be used as an example application in using Electron to build a SPA using Angular 
+with routing. 
 
 ## Installation
 
